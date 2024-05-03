@@ -1,0 +1,30 @@
+{
+  "name": "tourismt-community",
+  "version": "1.0.0",
+  "description": "code",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon code/src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranMinhTien2k3/BTL_XayDungUngDungWeb_N05.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Tran Minh Tien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranMinhTien2k3/BTL_XayDungUngDungWeb_N05/issues"
+  },
+  "homepage": "https://github.com/tranMinhTien2k3/BTL_XayDungUngDungWeb_N05#readme",
+  "dependencies": {
+    "ejs": "3.1.8",
+    "express": "4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
