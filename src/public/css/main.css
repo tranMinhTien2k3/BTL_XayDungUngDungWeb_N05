@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-image: url('../img/header.jpg');
     color: #333;
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -7,8 +7,14 @@ body {
 }
 
 .main-content {
+    position: absolute;
+    top: 70px;
+    bottom: 60px;
+    left: 10px;
+    right: 10px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(228, 255, 218);
+    border-radius: 25px;
 }
 
 footer {
@@ -20,14 +26,11 @@ footer {
     width: 100%;
 }
 
-header {
-    position: relative;
+.header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 150px;
+
 }
+
 
 .nav {
     position: absolute;
@@ -37,14 +40,13 @@ header {
 }
 
 .nav ul {
-    list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: rgb(23, 67, 52);
 }
 
 .nav li {
+
     float: left;
     display: inline;
 }
@@ -57,10 +59,30 @@ header {
 }
 
 .nav a:hover {
-    background-color: rgb(189, 129, 50);
+    background-color: rgb(148, 99, 34);
+    border-radius: 25px;
 }
 
 .logo {
-    font-size: 2em;
+    position: absolute;
+    color: antiquewhite;
+    text-align: center;
+    padding-left: 20px;
     font-weight: bold;
+}
+
+.logo h1 {
+    font-size: 2em;
+}
+
+@media (max-width: 834px) {
+    .logo h1 {
+        font-size: 0em;
+    }
+}
+
+
+.active {
+    border-radius: 25px;
+    background-color: rgb(128, 73, 1);
 }
