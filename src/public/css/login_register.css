@@ -17,6 +17,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
+    padding: 20px;
 }
 
 .container span {
@@ -70,6 +71,19 @@ body {
     outline: none;
 }
 
+.container li {
+    display: inline;
+    border-radius: 25%;
+    background-color: #eee6ff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container ul {
+    padding: 10px;
+    margin: 20px;
+}
+
 .form-container {
     position: absolute;
     top: 0;
@@ -118,6 +132,7 @@ body {
 
 
 .toggle-container {
+    padding-left: 20px;
     position: absolute;
     top: 0;
     left: 50%;
