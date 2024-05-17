@@ -203,3 +203,19 @@ body {
 .container.active .toggle-right {
     transform: translateX(200%);
 }
+
+.header {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 2000;
+    border-radius: 20px;
+    background-color: rgb(21, 63, 31);
+    padding: 10px;
+}
+
+.header a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 18px;
+}
