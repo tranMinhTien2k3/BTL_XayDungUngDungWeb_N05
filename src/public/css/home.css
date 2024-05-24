@@ -37,7 +37,7 @@ header h1 {
     padding: 10px;
 }
 
-
+/*carousel */
 .carousel {
     position: relative;
     overflow: hidden;
@@ -49,18 +49,18 @@ header h1 {
 }
 
 .carousel-item {
-    min-width: 300px;
+    min-width: 100%;
     margin-right: 10px;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: -100;
 }
 
 .carousel-item img {
-    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
     display: block;
     z-index: -50;
 }

@@ -11,11 +11,15 @@ function updateCarousel() {
 }
 
 leftButton.addEventListener('click', () => {
-    currentIndex = (currentIndex > 2) ? currentIndex - 1 : items.length - 1;
-    updateCarousel();
+    if (currentIndex > 0) {
+        currentIndex -= 1;
+        updateCarousel();
+    }
 });
 
 rightButton.addEventListener('click', () => {
-    currentIndex = (currentIndex < items.length - 2) ? currentIndex + 1 : 0;
-    updateCarousel();
+    if (currentIndex < items.length - 1) {
+        currentIndex += 1;
+        updateCarousel();
+    }
 });
