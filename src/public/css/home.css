@@ -70,3 +70,34 @@
 .carousel-button-right {
     right: 10px;
 }
+
+/* search bar */
+.search-bar {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px;
+    border-radius: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form input {
+    display: block;
+    background: transparent;
+    border: none;
+}
+
+.search-bar form button {
+    float: left;
+    background: #5144fd;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    border-left: none;
+}
