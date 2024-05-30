@@ -57,8 +57,29 @@
         <div class="table-container" id="myModal">
             <div class="modal-content">
                 <button><span class="close">&times;</span></button>
+                <h1>Tạo chuyến đi</h1>
+                <hr>
                 <div class="form-table">
-
+                    <form>
+                        <div>
+                            <label for="tripName">Tên chuyến đi:</label>
+                            <input type="text" id="tripName" name="trip_name"
+                                placeholder="ví dụ: Du lịch bãi biển ở Nha Trang" maxlength="80" required>
+                        </div>
+                        <div>
+                            <label for="destination">Điểm đến:</label>
+                            <input type="text" id="destination" name="destination" placeholder="Đi đâu?" required>
+                        </div>
+                        <div>
+                            <label for="startDate">Ngày (MM/DD/YYYY):</label>
+                            <input type="text" id="startDate" name="start_date" placeholder="MM/DD/YYYY">
+                        </div>
+                        <div>
+                            <label for="duration">Độ dài chuyến đi:</label>
+                            <input type="number" id="duration" name="duration" placeholder="Số ngày">
+                        </div>
+                        <button type="submit">Gửi</button>
+                    </form>
                 </div>
             </div>
         </div>
