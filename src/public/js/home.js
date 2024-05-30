@@ -18,7 +18,7 @@ leftButton.addEventListener('click', () => {
 });
 
 rightButton.addEventListener('click', () => {
-    if (currentIndex < items.length - 1) {
+    if (currentIndex < items.length - 2) {
         currentIndex += 1;
         updateCarousel();
     }

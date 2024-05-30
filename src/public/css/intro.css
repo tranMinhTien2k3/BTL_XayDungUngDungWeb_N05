@@ -1,0 +1,53 @@
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.add-content {
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.add-content button {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container-item {
+    min-width: 50%;
+    border-radius: 10px;
+}
+
+.text-content {
+    display: flex;
+    border: 1px solid black;
+    margin: 30px;
+    border-radius: 25px;
+    padding: 0;
+}
+
+.container-item img {
+    max-width: 80%;
+    min-height: 100%;
+    border-radius: 25px 0px 0px 25px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.select li {
+    display: inline;
+    float: left;
+}
+
+.select a {
+    display: block;
+    padding: 14px;
+}
