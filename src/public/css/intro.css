@@ -27,9 +27,10 @@
 .text-content {
     display: flex;
     border: 1px solid black;
-    margin: 30px;
     border-radius: 25px;
     padding: 0;
+    margin: 30px;
+    text-align: left;
 }
 
 .container-item img {
@@ -47,7 +48,38 @@
     float: left;
 }
 
+.select ul {
+    padding: 0px;
+}
+
 .select a {
     display: block;
     padding: 14px;
+}
+
+
+/* btaddcd */
+.table-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    height: 100%;
+}
+
+.modal-content button {
+    float: right;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
 }
