@@ -1,0 +1,12 @@
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+}

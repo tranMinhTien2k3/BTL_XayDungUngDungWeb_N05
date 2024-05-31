@@ -85,3 +85,13 @@ hr {
     background-color: black;
     margin: 40px;
 }
+
+
+.container-content {
+    background-color: rgba(80, 80, 76, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 10px 10px;
+    padding: 10px;
+}
