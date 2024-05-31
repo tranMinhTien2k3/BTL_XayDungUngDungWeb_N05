@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./public/css/main.css">
     <link rel="stylesheet" href="./public/css/general.css">
     <link rel="stylesheet" href="./public/css/intro.css">
+    <link rel="stylesheet" href="./public/css/detailtrip.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -46,14 +47,33 @@
         <form>
             <input type="text" placeholder="Mục đích chuyến đi...">
         </form>
-
+        <div class="nav12">
+            <ul>
+                <li><a class="acti" href="">Ghi chú cho chuyến đi</a></li>
+                <li><a href="">Các mốc điểm đến</a></li>
+            </ul>
+        </div>
+        <div class="container-note">
+            <div class="text-content">
+                <p>Ghi chú</p>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>Bản quyền © 2024</p>
     </footer>
-
-    <script src="./public/js/intro.js"></script>
+    <script>
+        document.querySelectorAll('.nav12 ul li a').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelectorAll('.nav12 ul li a').forEach(function (a) {
+                    a.classList.remove('acti');
+                });
+                this.classList.add('acti');
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+.nav12 ul {
+    border-bottom: 1px solid black;
+    display: flex;
+    padding: 0px;
+}
+
+.nav12 li {
+    float: left;
+    display: inline;
+}
+
+.nav12 a {
+    display: block;
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav12 a:hover {
+    background-color: rgb(148, 99, 34);
+}
+
+.acti {
+    border-bottom: 5px solid black
+}
