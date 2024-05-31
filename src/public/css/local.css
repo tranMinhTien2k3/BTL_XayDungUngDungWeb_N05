@@ -10,3 +10,26 @@
     border-radius: 20px;
     font-size: 16px;
 }
+
+.cities-section {
+    margin-top: 40px;
+}
+
+.cities-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.city-container {
+    display: flex;
+    gap: 20px;
+}
+
+.city-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    text-align: center;
+}
