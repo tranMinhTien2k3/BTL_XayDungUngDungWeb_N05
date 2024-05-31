@@ -33,3 +33,18 @@
     flex: 1;
     text-align: center;
 }
+
+
+.city-info {
+    padding: 10px;
+}
+
+.city-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.city-info p {
+    margin: 0;
+    color: #666;
+}
