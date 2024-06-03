@@ -1,0 +1,19 @@
+.forum,
+.group {
+    width: 20%;
+    background: #ccc;
+    height: 100%;
+}
+
+.forum {
+    float: right;
+}
+
+.group {
+    float: left;
+}
+
+.share-experience {
+    width: 60%;
+    float: left;
+}
