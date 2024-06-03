@@ -17,3 +17,33 @@
     width: 60%;
     float: left;
 }
+
+.share-experience form {
+    padding: 20px;
+}
+
+.share-experience h2 {
+    text-align: center;
+}
+
+.share-experience input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.share-experience button {
+    background-color: #512da8;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.share-experience button:hover {
+    background-color: #4cae4c;
+}
