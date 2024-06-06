@@ -104,3 +104,11 @@
     bottom: 0;
     padding: 60px;
 }
+
+.delete-btn {
+    float: right;
+}
+
+.delete-btn:hover {
+    background-color: rgb(148, 99, 34);
+}

@@ -63,6 +63,7 @@
             </div>
             <div id="notes">
                 <div class="note">
+                    <button class="delete-btn" onclick="deleteNote(this)">X</button>
                     <div class="note-header">
                         <span class="note-title">Đồ ăn</span>
                     </div>
@@ -83,7 +84,7 @@
                         <label for="noteContent">Ghi chú của bạn</label>
                         <textarea id="noteContent" class="note-textarea"
                             placeholder="(ví dụ: Sử dụng phương tiện gì, đem theo gì, ...)"></textarea>
-                        <button type="button" class="submit-btn">Thêm</button>
+                        <button type="button" class="submit-btn" onclick="addNote()">Thêm</button>
                     </form>
                 </div>
             </div>
@@ -136,7 +137,56 @@
         span1.onclick = function () {
             modalShare.style.display = "none";
         }
+        function addNote() {
+            var title = document.getElementById('noteTitle').value || 'Không có tiêu đề';
+            var content = document.getElementById('noteContent').value;
+            if (content.trim() === '') {
+                alert('Vui lòng nhập ghi chú của bạn.');
+                return;
+            }
 
+            var noteList = document.getElementById('notes');
+            var noteCount = noteList.children.length + 1;
+
+            var note = document.createElement('div');
+            note.className = 'note';
+
+            var deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = 'X';
+            deleteBtn.onclick = function () {
+                deleteNote(deleteBtn);
+            };
+
+            var noteHeader = document.createElement('div');
+            noteHeader.className = 'note-header';
+
+            var noteTitle = document.createElement('span');
+            noteTitle.className = 'note-title';
+            noteTitle.textContent = title;
+
+            var noteContent = document.createElement('div');
+            noteContent.className = 'note-content';
+            var noteText = document.createElement('p');
+            noteText.textContent = content;
+
+            noteHeader.appendChild(noteTitle);
+            noteContent.appendChild(noteText);
+
+            note.appendChild(deleteBtn);
+            note.appendChild(noteHeader);
+            note.appendChild(noteContent);
+
+            noteList.appendChild(note);
+            document.getElementById('modal').style.display = 'none';
+
+            document.getElementById('noteForm').reset();
+        }
+
+        function deleteNote(element) {
+            var note = element.parentElement;
+            note.parentElement.removeChild(note);
+        }
 
     </script>
 </body>
