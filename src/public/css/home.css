@@ -1,5 +1,6 @@
 .space {
     height: 50px;
+    width: 50px;
 }
 
 header {
@@ -111,7 +112,6 @@ header h1 {
 .search-bar form input {
     display: block;
     background: transparent;
-    border: none;
 }
 
 .search-bar form button {
