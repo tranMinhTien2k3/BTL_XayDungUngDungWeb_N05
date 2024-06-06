@@ -49,11 +49,14 @@
 }
 
 /* note */
-.container-note {
-    margin: 10px;
+.container-notetrip {
     border: 1px solid #ddd;
     padding: 30px;
+    margin: 10px;
     border-radius: 8px;
+}
+
+.container-note {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,4 +73,24 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.note {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.note-content {
+    margin-top: 10px;
 }

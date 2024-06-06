@@ -49,13 +49,26 @@
                 <li><a href="">Các mốc điểm đến</a></li>
             </ul>
         </div>
-        <div class="container-note">
-            <h1>Ghi chú</h1>
-            <p>(Lưu ý ghi chép lại những gì bạn cần cho chuyến đi)</p>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="document.getElementById('modal').style.display='block'">Thêm</button>
-                <div class="dropdown-content">
-                    <p onclick="document.getElementById('modal').style.display='block'">Tạo ghi chú</p>
+        <div class="container-notetrip">
+            <div class="container-note">
+                <h1>Ghi chú</h1>
+                <p>(Lưu ý ghi chép lại những gì bạn cần cho chuyến đi)</p>
+                <div class="dropdown">
+                    <button class="dropbtn"
+                        onclick="document.getElementById('modal').style.display='block'">Thêm</button>
+                    <div class="dropdown-content">
+                        <p onclick="document.getElementById('modal').style.display='block'">Tạo ghi chú</p>
+                    </div>
+                </div>
+            </div>
+            <div id="notes">
+                <div class="note">
+                    <div class="note-header">
+                        <span class="note-title">Đồ ăn</span>
+                    </div>
+                    <div class="note-content">
+                        <p>Thịt lợn, rau sống, nước tương,...</p>
+                    </div>
                 </div>
             </div>
         </div>
