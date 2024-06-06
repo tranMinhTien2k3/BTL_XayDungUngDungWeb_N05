@@ -46,7 +46,6 @@
         <div class="nav12">
             <ul>
                 <li><a class="acti" href="">Ghi chú cho chuyến đi</a></li>
-                <li><a href="">Các mốc điểm đến</a></li>
             </ul>
         </div>
         <div class="container-notetrip">
@@ -119,16 +118,6 @@
         <p>Bản quyền © 2024</p>
     </footer>
     <script>
-        document.querySelectorAll('.nav12 ul li a').forEach(function (link) {
-            link.addEventListener('click', function (event) {
-                event.preventDefault();
-                document.querySelectorAll('.nav12 ul li a').forEach(function (a) {
-                    a.classList.remove('acti');
-                });
-                this.classList.add('acti');
-            });
-        });
-
         var modalShare = document.getElementById("myModalShare");
         var bts = document.getElementById("Btsharecd");
         var span1 = document.getElementsByClassName("close1")[0];
