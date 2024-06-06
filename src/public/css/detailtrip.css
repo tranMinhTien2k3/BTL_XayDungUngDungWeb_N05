@@ -52,14 +52,22 @@
 .container-note {
     margin: 10px;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dropdown {
-    position: relative;
-    display: inline;
+.container-note button {
+    width: 100px;
+    height: 50px;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
