@@ -37,7 +37,7 @@
                     <p><i class="fa fa-calendar"></i> 30 thg 5, 2024 <i class="fa fa-map-o"></i> Đà Nẵng, Việt Nam</p>
                     <div class="select">
                         <ul>
-                            <li><a href="">Chia sẻ chuyến đi</a></li>
+                            <li><a href="#" id="Btsharecd">Chia sẻ chuyến đi</a></li>
                             <li><a href="">Chỉnh sửa</a></li>
                         </ul>
                     </div>
@@ -58,8 +58,28 @@
                 <p>Ghi chú</p>
             </div>
         </div>
-    </main>
 
+        <div class="table-container-share" id="myModalShare">
+            <div class="modal-content">
+                <button><span class="close1">&times;</span></button>
+                <h2>Đăng Bài Viết Mới</h2>
+                <hr>
+                <div class="form-table">
+                    <form>
+                        <div>
+                            <label for="title">Tiêu Đề:</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+                        <div>
+                            <label for="content">Nội Dung:</label>
+                            <textarea id="content" name="content" rows="10" required></textarea>
+                        </div>
+                        <button type="submit">Đăng Bài</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <p>Bản quyền © 2024</p>
     </footer>
@@ -73,6 +93,17 @@
                 this.classList.add('acti');
             });
         });
+
+        var modalShare = document.getElementById("myModalShare");
+        var bts = document.getElementById("Btsharecd");
+        var span1 = document.getElementsByClassName("close1");
+        bts.onclick = function () {
+            modalShare.style.display = "block";
+        }
+
+        span1.onclick = function () {
+            modalShare.style.display = "none";
+        }
     </script>
 </body>
 
