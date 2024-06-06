@@ -71,6 +71,22 @@
                     </div>
                 </div>
             </div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                    <h2>Tạo ghi chú</h2>
+                    <form id="noteForm">
+                        <label for="noteTitle">Tiêu đề (không bắt buộc)</label>
+                        <input type="text" id="noteTitle" class="note-input"
+                            placeholder="(ví dụ: Phương tiện, Dụng cụ, ...)">
+                        <label for="noteContent">Ghi chú của bạn</label>
+                        <textarea id="noteContent" class="note-textarea"
+                            placeholder="(ví dụ: Sử dụng phương tiện gì, đem theo gì, ...)"></textarea>
+                        <button type="button" class="submit-btn">Thêm</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="table-container-share" id="myModalShare">
@@ -120,6 +136,8 @@
         span1.onclick = function () {
             modalShare.style.display = "none";
         }
+
+
     </script>
 </body>
 

@@ -94,3 +94,13 @@
 .note-content {
     margin-top: 10px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 60px;
+}
