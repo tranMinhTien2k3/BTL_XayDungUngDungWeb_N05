@@ -47,3 +47,19 @@
 .btton button:hover {
     background-color: rgb(148, 99, 34);
 }
+
+/* note */
+.container-note {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+}
