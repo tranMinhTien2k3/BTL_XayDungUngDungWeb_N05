@@ -59,8 +59,7 @@
 
 
 /* btaddcd */
-.table-container,
-.table-container-share {
+.table-container {
     display: none;
     position: fixed;
     z-index: 1;

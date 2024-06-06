@@ -35,18 +35,14 @@
                 <div class="main-content">
                     <h1>Du lịch Bà Nà Hill</h1>
                     <p><i class="fa fa-calendar"></i> 30 thg 5, 2024 <i class="fa fa-map-o"></i> Đà Nẵng, Việt Nam</p>
-                    <div class="select">
-                        <ul>
-                            <li><a href="#" id="Btsharecd">Chia sẻ chuyến đi</a></li>
-                            <li><a href="">Chỉnh sửa</a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
-        <form>
-            <input type="text" placeholder="Mục đích chuyến đi...">
-        </form>
+        <div class="btton">
+            <form>
+                <button id="Btsharecd" type="button">Chia sẻ chuyến đi</button>
+            </form>
+        </div>
         <div class="nav12">
             <ul>
                 <li><a class="acti" href="">Ghi chú cho chuyến đi</a></li>
@@ -61,7 +57,7 @@
 
         <div class="table-container-share" id="myModalShare">
             <div class="modal-content">
-                <button><span class="close1">&times;</span></button>
+                <button type="button"><span class="close1">&times;</span></button>
                 <h2>Đăng Bài Viết Mới</h2>
                 <hr>
                 <div class="form-table">
@@ -72,9 +68,11 @@
                         </div>
                         <div>
                             <label for="content">Nội Dung:</label>
-                            <textarea id="content" name="content" rows="10" required></textarea>
+                            <textarea id="content" name="content" rows="10" required
+                                style="width: 234px; height: 50px;"></textarea>
                         </div>
                         <button type="submit">Đăng Bài</button>
+                        <p>Đăng tải chuyến đi của bạn đến người khác</p>
                     </form>
                 </div>
             </div>
@@ -96,7 +94,7 @@
 
         var modalShare = document.getElementById("myModalShare");
         var bts = document.getElementById("Btsharecd");
-        var span1 = document.getElementsByClassName("close1");
+        var span1 = document.getElementsByClassName("close1")[0];
         bts.onclick = function () {
             modalShare.style.display = "block";
         }
