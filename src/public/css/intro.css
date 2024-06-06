@@ -79,7 +79,9 @@
     float: right;
 }
 
-.close {
+.close1,
+.close,
+.close2 {
     color: #aaa;
     font-size: 28px;
     font-weight: bold;

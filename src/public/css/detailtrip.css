@@ -109,6 +109,29 @@
     float: right;
 }
 
-.delete-btn:hover {
+.modal-content {
+    padding: 10px;
+}
+
+.submit-btn {
+    background-color: #512da8;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.delete-btn:hover,
+.submit-btn:hover {
     background-color: rgb(148, 99, 34);
+}
+
+.note-input,
+.note-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }

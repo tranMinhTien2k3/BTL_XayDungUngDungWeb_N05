@@ -75,7 +75,8 @@
 
             <div id="modal" class="modal">
                 <div class="modal-content">
-                    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                    <button type="button"><span class="close2"
+                            onclick="document.getElementById('modal').style.display='none'">&times;</span></button>
                     <h2>Tạo ghi chú</h2>
                     <form id="noteForm">
                         <label for="noteTitle">Tiêu đề (không bắt buộc)</label>
@@ -92,7 +93,8 @@
 
         <div class="table-container-share" id="myModalShare">
             <div class="modal-content">
-                <button type="button"><span class="close1">&times;</span></button>
+                <button type="button"><span class="close1"
+                        onclick="document.getElementById('myModalShare').style.display='none'">&times;</span></button>
                 <h2>Đăng Bài Viết Mới</h2>
                 <hr>
                 <div class="form-table">
@@ -132,10 +134,6 @@
         var span1 = document.getElementsByClassName("close1")[0];
         bts.onclick = function () {
             modalShare.style.display = "block";
-        }
-
-        span1.onclick = function () {
-            modalShare.style.display = "none";
         }
         function addNote() {
             var title = document.getElementById('noteTitle').value || 'Không có tiêu đề';
