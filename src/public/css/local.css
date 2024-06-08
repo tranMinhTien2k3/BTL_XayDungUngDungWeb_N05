@@ -11,6 +11,14 @@
     font-size: 16px;
 }
 
+.category a {
+    text-decoration: none;
+}
+
+.category a:hover {
+    color: black;
+}
+
 .cities-section {
     margin-top: 40px;
     padding: 20px;
@@ -33,6 +41,11 @@
     overflow: hidden;
     flex: 1;
     text-align: center;
+}
+
+.city-card img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 
