@@ -41,6 +41,12 @@
     overflow: hidden;
     flex: 1;
     text-align: center;
+    cursor: pointer
+}
+
+.city-card:hover {
+    transform: translateZ(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .city-card img {
