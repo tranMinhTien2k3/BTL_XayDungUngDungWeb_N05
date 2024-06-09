@@ -1,12 +1,26 @@
 .forum,
 .group {
+    background-color: #ccc;
     width: 20%;
-    background: #ccc;
     height: 100%;
+    color: darkred;
 }
 
 .forum {
     float: right;
+}
+
+.forum h2,
+.group h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.forum h3,
+.group h3 {
+    text-align: center;
 }
 
 .group {
@@ -35,6 +49,7 @@
 .image {
     position: relative;
     flex: 1;
+    padding: 10px;
 }
 
 .image img {
@@ -66,6 +81,10 @@
     margin-bottom: 20px;
 }
 
+.notetrip ul {
+    padding-left: 40px;
+}
+
 .like-button {
     display: flex;
     align-items: center;
@@ -76,4 +95,30 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.like-button:hover {
+    background-color: #e0a800;
+}
+
+.group-item,
+.forum-item {
+    padding: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
