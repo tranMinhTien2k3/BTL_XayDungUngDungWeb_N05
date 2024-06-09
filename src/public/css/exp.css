@@ -1,9 +1,12 @@
 .forum,
 .group {
-    background-color: #ccc;
+    background-image: url(../img/gf.jpg);
+    background-size: contain;
+    background-attachment: fixed;
     width: 20%;
     height: 100%;
-    color: darkred;
+    color: black;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 .forum {
@@ -12,6 +15,7 @@
 
 .forum h2,
 .group h2 {
+    color: darkred;
     margin-bottom: 15px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
@@ -114,8 +118,10 @@ ul li {
     margin-bottom: 10px;
 }
 
-ul li a {
-    color: #007bff;
+.group ul li a,
+.forum ul li a {
+    color: blue;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
