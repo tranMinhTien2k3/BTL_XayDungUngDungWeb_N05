@@ -126,3 +126,16 @@ header h1 {
     border-radius: 50%;
     border: none;
 }
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover {
+    background-color: #0056b3;
+}

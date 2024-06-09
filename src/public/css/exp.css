@@ -121,7 +121,7 @@ ul li {
 .group ul li a,
 .forum ul li a {
     color: blue;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
     text-decoration: none;
 }
 
