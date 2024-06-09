@@ -18,32 +18,62 @@
     float: left;
 }
 
-.share-experience form {
-    padding: 20px;
-}
-
 .share-experience h2 {
     text-align: center;
 }
 
-.share-experience input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+/* post */
+.post-list {
+    display: flex;
     border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.share-experience button {
-    background-color: #512da8;
-    color: #fff;
-    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
     width: 100%;
-    padding: 10px;
-    margin-top: 15px;
 }
 
-.share-experience button:hover {
-    background-color: #4cae4c;
+.image {
+    position: relative;
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.post-item {
+    flex: 2;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
